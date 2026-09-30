@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio - Sandoval Reyes Miguel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/portafolio.css">
+    <script src="js/portafolio.js"></script>
+</head>
+
+<body>
+    <button class="boton-menu d-lg-none" onclick="alternarMenu()">
+        <i class="bi bi-list"></i>
+    </button>
+
+    <aside id="barraLateral" class="barra-lateral">
+        <button class="cerrar-menu d-lg-none" onclick="alternarMenu()">×</button>
+
+        <div class="perfil-lateral">
+            <img src="img/perfil.jpg" alt="Foto de perfil de Sandoval Reyes Miguel">
+            <h1>Sandoval Reyes Miguel</h1>
+            <p>Estudiante de Ingeniería en Sistemas Computacionales</p>
+        </div>
+
+        <nav class="menu">
+            <a href="#inicio" onclick="cerrarMenu()">Inicio</a>
+            <a href="#sobre-mi" onclick="cerrarMenu()">Sobre mí</a>
+            <a href="#que-hago" onclick="cerrarMenu()">Lo que hago</a>
+            <a href="#habilidades" onclick="cerrarMenu()">Habilidades</a>
+            <a href="#educacion" onclick="cerrarMenu()">Educación</a>
+            <a href="#proyectos" onclick="cerrarMenu()">Proyectos</a>
+            <a href="#contacto" onclick="cerrarMenu()">Contacto</a>
+        </nav>
+
+        <div class="social">
+            <a href="https://github.com/miguelsandovalreyeskgll" target="_blank">
+                <i class="bi bi-github"></i>
+            </a>
+        </div>
+    </aside>
+
+    <main class="contenido">
+        <section id="inicio" class="inicio seccion">
+            <div class="container">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-7">
+                        <span class="mini-titulo">PORTAFOLIO PERSONAL</span>
+                        <h2>Hola, soy<br><strong>Miguel Sandoval</strong></h2>
+                        <p class="presentacion">
+                            Estudiante de Ingeniería en Sistemas Computacionales interesado en desarrollo web,
+                            backend y creación de aplicaciones.
+                        </p>
+                        <div class="botones-inicio">
+                            <a href="#proyectos" class="btn btn-principal">Ver proyectos</a>
+                            <a href="#sobre-mi" class="btn btn-secundario">Conocer más</a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-5">
+                        <div class="tarjeta-inicio">
+                            <img src="img/perfil.jpg" alt="Foto profesional de Sandoval Reyes Miguel">
+                            <div>
+                                <span>Actualmente</span>
+                                <h3>Aprendiendo y desarrollando</h3>
+                                <p>JavaScript, Bootstrap, Java, Spring Boot y MySQL.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre-mi" class="seccion fondo-blanco">
+            <div class="container">
+                <div class="encabezado-seccion">
+                    <span>ACERCA DE MÍ</span>
+                    <h2>¿Quién soy?</h2>
+                </div>
+
+                <div class="row g-4 align-items-center">
+                    <div class="col-lg-7">
+                        <p>
+                            Soy estudiante de Ingeniería en Sistemas Computacionales. Me gusta aprender mediante
+                            proyectos prácticos y actualmente trabajo con tecnologías web, Java y bases de datos.
+                        </p>
+                        <p>
+                            Mi objetivo es seguir mejorando como desarrollador y construir proyectos que resuelvan
+                            problemas reales de forma sencilla y funcional.
+                        </p>
+                    </div>
+
+                    <div class="col-lg-5">
+                        <div class="datos">
+                            <p><strong>Nombre:</strong> Sandoval Reyes Miguel</p>
+                            <p><strong>Carrera:</strong> Ingeniería en Sistemas Computacionales</p>
+                            <p><strong>Ubicación:</strong> Oaxaca, México</p>
+                            <p><strong>Área de interés:</strong> Desarrollo web y backend</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row g-3 mt-4">
+                    <div class="col-6 col-md-3">
+                        <div class="dato-numero">
+                            <strong>3</strong>
+                            <span>Proyectos mostrados</span>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="dato-numero">
+                            <strong>6</strong>
+                            <span>Tecnologías</span>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="dato-numero">
+                            <strong>1</strong>
+                            <span>Portafolio web</span>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="dato-numero">
+                            <strong>100%</strong>
+                            <span>Aprendizaje continuo</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="que-hago" class="seccion">
+            <div class="container">
+                <div class="encabezado-seccion">
+                    <span>LO QUE HAGO</span>
+                    <h2>Áreas que estoy desarrollando</h2>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-md-6 col-xl-3">
+                        <div class="servicio servicio-azul">
+                            <i class="bi bi-window"></i>
+                            <h3>Desarrollo web</h3>
+                            <p>Creación de interfaces con HTML, CSS, JavaScript y Bootstrap.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-xl-3">
+                        <div class="servicio servicio-verde">
+                            <i class="bi bi-code-slash"></i>
+                            <h3>Backend</h3>
+                            <p>Desarrollo de lógica y APIs utilizando Java y Spring Boot.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-xl-3">
+                        <div class="servicio servicio-naranja">
+                            <i class="bi bi-database"></i>
+                            <h3>Bases de datos</h3>
+                            <p>Diseño y manejo de información mediante MySQL.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-xl-3">
+                        <div class="servicio servicio-morado">
+                            <i class="bi bi-git"></i>
+                            <h3>Control de versiones</h3>
+                            <p>Uso de Git y GitHub para organizar y publicar proyectos.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="habilidades" class="seccion fondo-blanco">
+            <div class="container">
+                <div class="encabezado-seccion">
+                    <span>MIS HABILIDADES</span>
+                    <h2>Tecnologías que utilizo y sigo aprendiendo</h2>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="habilidad">
+                            <div class="d-flex justify-content-between">
+                                <span>HTML</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar barra-azul" style="width: 80%"></div>
+                            </div>
+                        </div>
+
+                        <div class="habilidad">
+                            <div class="d-flex justify-content-between">
+                                <span>CSS</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar barra-verde" style="width: 75%"></div>
+                            </div>
+                        </div>
+
+                        <div class="habilidad">
+                            <div class="d-flex justify-content-between">
+                                <span>JavaScript</span>
+                                <span>70%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar barra-naranja" style="width: 70%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="habilidad">
+                            <div class="d-flex justify-content-between">
+                                <span>Bootstrap</span>
+                                <span>70%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar barra-morado" style="width: 70%"></div>
+                            </div>
+                        </div>
+
+                        <div class="habilidad">
+                            <div class="d-flex justify-content-between">
+                                <span>Java / Spring Boot</span>
+                                <span>65%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar barra-azul" style="width: 65%"></div>
+                            </div>
+                        </div>
+
+                        <div class="habilidad">
+                            <div class="d-flex justify-content-between">
+                                <span>MySQL</span>
+                                <span>65%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar barra-verde" style="width: 65%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="educacion" class="seccion">
+            <div class="container">
+                <div class="encabezado-seccion">
+                    <span>EDUCACIÓN</span>
+                    <h2>Formación académica</h2>
+                </div>
+
+                <div class="accordion" id="acordeonEducacion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#educacionUno">
+                                Ingeniería en Sistemas Computacionales
+                            </button>
+                        </h2>
+                        <div id="educacionUno" class="accordion-collapse collapse show"
+                            data-bs-parent="#acordeonEducacion">
+                            <div class="accordion-body">
+                                Formación enfocada en programación, desarrollo web, bases de datos, redes y software.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#educacionDos">
+                                Aprendizaje mediante proyectos
+                            </button>
+                        </h2>
+                        <div id="educacionDos" class="accordion-collapse collapse"
+                            data-bs-parent="#acordeonEducacion">
+                            <div class="accordion-body">
+                                Desarrollo de actividades y proyectos prácticos con JavaScript, Java, Bootstrap,
+                                GitHub y MySQL.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="proyectos" class="seccion fondo-blanco">
+            <div class="container">
+                <div class="encabezado-seccion">
+                    <span>MI TRABAJO</span>
+                    <h2>Proyectos recientes</h2>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-md-6 col-xl-4">
+                        <article class="proyecto">
+                            <img src="img/proyecto-utileria.png" alt="Proyecto utileria.js">
+                            <div class="proyecto-texto">
+                                <span>JavaScript</span>
+                                <h3>Librería utileria.js</h3>
+                                <p>Funciones reutilizables para validar formularios, edades, contraseñas y otros datos.</p>
+                                <a href="https://github.com/miguelsandovalreyeskgll/Actividad2" target="_blank">
+                                    Ver repositorio
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col-md-6 col-xl-4">
+                        <article class="proyecto">
+                            <img src="img/proyecto-aviso.png" alt="Proyecto AvisoJS">
+                            <div class="proyecto-texto">
+                                <span>JavaScript / CSS</span>
+                                <h3>AvisoJS</h3>
+                                <p>Componente reutilizable para mostrar notificaciones visuales dentro de una página.</p>
+                                <a href="https://github.com/miguelsandovalreyeskgll/Actividad3_Componente_Visual" target="_blank">
+                                    Ver repositorio
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col-md-6 col-xl-4">
+                        <article class="proyecto">
+                            <img src="img/proyecto-mesacero.png" alt="Proyecto MesaCero">
+                            <div class="proyecto-texto">
+                                <span>Proyecto en desarrollo</span>
+                                <h3>MesaCero</h3>
+                                <p>Sistema para apoyar la gestión de reservas, mesas, órdenes e inventario de un restaurante.</p>
+                                <p class="estado">En desarrollo</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="seccion">
+            <div class="container">
+                <div class="encabezado-seccion">
+                    <span>CONTACTO</span>
+                    <h2>Hablemos</h2>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-lg-5">
+                        <div class="contacto-datos">
+                            <div>
+                                <i class="bi bi-geo-alt"></i>
+                                <p><strong>Ubicación</strong><br>Oaxaca, México</p>
+                            </div>
+                            <div>
+                                <i class="bi bi-github"></i>
+                                <p><strong>GitHub</strong><br>miguelsandovalreyeskgll</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-7">
+                        <form onsubmit="return enviarFormulario()">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label class="form-label">Nombre</label>
+                                    <input type="text" class="form-control" id="nombreContacto" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">Correo</label>
+                                    <input type="email" class="form-control" required>
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label">Mensaje</label>
+                                    <textarea class="form-control" rows="4" required></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn btn-principal" type="submit">Enviar mensaje</button>
+                                </div>
+                            </div>
+                            <p id="resultadoContacto" class="mt-3"></p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">
+                <p>Portafolio académico - Sandoval Reyes Miguel</p>
+                <p>Basado en la plantilla Jackson de ThemeWagon.</p>
+            </div>
+        </footer>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
